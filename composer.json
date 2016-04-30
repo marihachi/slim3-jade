@@ -14,12 +14,6 @@
         }
     ],
     "minimum-stability": "stable",
-    "repositories": [
-        {
-            "type": "vcs",
-            "url": "https://github.com/marihachi/tale-jade.git"
-        }
-    ],
     "require": {
         "slim/slim": "^3.3",
         "marihachi/tale-jade": "dev-master"
