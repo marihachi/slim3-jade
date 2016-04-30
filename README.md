@@ -2,7 +2,7 @@
 Jade view for Slim3 framework
 
 ## Usage
-refarence [Sample](sample/)
+reference [Sample](sample/)
 
 ## License
 Released under the MIT License.
