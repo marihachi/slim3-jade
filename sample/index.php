@@ -2,8 +2,7 @@
 
 use Slim\Views\JadeRenderer;
 
-require '../vendor/autoload.php';
-require '../src/JadeRenderer.php';
+require 'vendor/autoload.php';
 
 $app = new Slim\App();
 $container = $app->getContainer();
