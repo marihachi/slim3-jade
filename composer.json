@@ -13,10 +13,10 @@
             "homepage": "https://marihachi.hol.es"
         }
     ],
-    "minimum-stability": "dev",
+    "minimum-stability": "stable",
     "require": {
         "slim/slim": "^3.3",
-        "marihachi/tale-jade": "dev-master@dev"
+        "marihachi/tale-jade": "@dev"
     },
     "autoload": {
         "psr-4": { "Slim\\Views\\": "src" }
