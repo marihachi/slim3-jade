@@ -13,7 +13,7 @@
             "homepage": "https://marihachi.hol.es"
         }
     ],
-    "minimum-stability": "stable",
+    "minimum-stability": "dev",
     "require": {
         "slim/slim": "^3.3",
         "marihachi/tale-jade": "dev-master"
