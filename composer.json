@@ -16,7 +16,7 @@
     "minimum-stability": "dev",
     "require": {
         "slim/slim": "^3.3",
-        "marihachi/tale-jade": "dev-master-dev"
+        "marihachi/tale-jade": "dev-master@dev"
     },
     "autoload": {
         "psr-4": { "Slim\\Views\\": "src" }
