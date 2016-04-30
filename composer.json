@@ -13,6 +13,7 @@
             "homepage": "https://marihachi.hol.es"
         }
     ],
+    "minimum-stability": "stable",
     "repositories": [
         {
             "type": "vcs",
