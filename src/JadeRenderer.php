@@ -6,12 +6,10 @@ use \Psr\Http\Message\ResponseInterface;
 
 class JadeRenderer
 {
-	public function __construct($path = null)
+	public function __construct($path = './views')
     {
 		$this->internalRenderer = new \Tale\Jade\Renderer();
-		
-		if (isset($path))
-			$this->addPath($path);
+		$this->addPath($path);
     }
 
 	private $internalRenderer;
