@@ -22,7 +22,7 @@
     ],
     "require": {
         "slim/slim": "^3.3",
-        "marihachi/tale-jade": "dev-my-branch"
+        "marihachi/tale-jade": "dev-master"
     },
     "autoload": {
         "psr-4": { "Slim\\Views\\": "src" }
