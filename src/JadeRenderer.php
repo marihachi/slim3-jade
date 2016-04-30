@@ -4,14 +4,14 @@ namespace Slim\Views;
 
 use \Psr\Http\Message\ResponseInterface;
 
-class Jade
+class JadeRenderer
 {
-	public function __construct($templatePath = null)
+	public function __construct($path = null)
     {
 		$this->internalRenderer = new \Tale\Jade\Renderer();
 		
-		if (isset($templatePath))
-			$this->addPath($templatePath);
+		if (isset($path))
+			$this->addPath($path);
     }
 
 	private $internalRenderer;
@@ -21,12 +21,20 @@ class Jade
 		$this->internalRenderer->addPath($dirPath);
 	}
 
+	public function fetch($templateName, array $data = [])
+	{
+		$source = $this->internalRenderer->render($templateName, $data);
+		
+		return $source;
+	}
+
 	public function render(ResponseInterface $response, $templateName, array $data = [])
 	{
-		$output = $this->internalRenderer->render($templateName, $data);
+		$source = $this->fetch($templateName, $data);
 
 		$body = $response->getBody();
-		$body->write($output);
+		$body->write($source);
+		
 		return $response->withBody($body);
 	}
 }
