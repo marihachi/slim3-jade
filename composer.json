@@ -16,7 +16,7 @@
     "minimum-stability": "dev",
     "require": {
         "psr/http-message": "@dev",
-        "marihachi/tale-jade": "^0.0.1@dev"
+        "marihachi/tale-jade": "@dev"
     },
     "require-dev": {
         "slim/slim": "^3.3@dev"
