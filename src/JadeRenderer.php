@@ -7,10 +7,10 @@ use \Psr\Http\Message\ResponseInterface;
 class JadeRenderer
 {
 	public function __construct($path = './views')
-    {
+	{
 		$this->internalRenderer = new \Tale\Jade\Renderer();
 		$this->addPath($path);
-    }
+	}
 
 	private $internalRenderer;
 
